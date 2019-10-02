@@ -1,5 +1,7 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>360°</title>
 <style>body,html{margin:0;padding:0;width:100%;height:100%}body{background-color:#333}iframe{top:0;left:0}.w,iframe{position:absolute}.w{width:100%;height:90%}.w *{opacity:0}#c{width:80%;margin:0 10%}</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149273084-1"></script>
+<script>window.dataLayer=[];function gtag(){dataLayer.push(arguments)};gtag("js",new Date());gtag("config","UA-149273084-1")</script>
 </head><body><input type="range" value="0" min="0" max="720" id="c"><div class="w"></div>
 <script>var e=document,t=function(){var t=e.querySelectorAll(".w *");t.forEach(function(e,a){e.style.opacity=Math.max(0,Math.min(1,(t.length-1)*c.value/c.max-a+1))})},a=function(a){var c=new XMLHttpRequest;c.onreadystatechange=function(){if(4===c.readyState&&200===c.status){var n=JSON.parse(c.response);console.log(n.gfyItem);var r=e.createElement("iframe");r.src="https://gfycat.com/ifr/".concat(a,"?hd=1"),r.frameBorder=0,r.height=r.width="100%",r.allowFullscreen=!0,e.querySelector(".w").appendChild(r),t()}},c.open("GET","https://api.gfycat.com/v1/gfycats/".concat(a)),c.send()};c.addEventListener("input",t),location.search.slice(1).split("&").forEach(a)</script>
 </body></html>
